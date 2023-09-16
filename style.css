@@ -1,0 +1,88 @@
+:root{
+    --color-1-oscuro: #002D40;
+    --color-1-brillante: #00A1E6;
+    --color-1-quemado: #00B2FF;
+
+    --color-2-oscuro: #004004;
+    --color-2-brillante: #00E60F;
+    --color-2-quemado: #00FF11;
+
+    --sans: 'Open Sans', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--color-1-oscuro);
+
+    color: white;
+    font-family: var(--sans);
+
+}
+
+nav {
+    font-family: var(--mono);
+    padding: 1rem;
+}
+
+nav h1 a{
+    font-family: var(--sans);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav [class*="fa-"]{
+    font-size: 150%;
+    color: var(--color-2-brillante)
+}
+nav a{
+    color: whitesmoke;
+    text-decoration: none;
+    display: block;
+}
+
+nav a:hover,
+nav [class*="fa-"]:hover{
+    color: var(--color-1-brillante)
+}
+
+.button {
+    background-color: var(--color-1-brillante);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.button:hover {
+    color: white;
+    background-color: var(--color-1-quemado);
+}
+
+@media(min-width: 850px){
+    nav {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    nav li:first-child{
+        flex-basis: auto;
+        text-align: left;
+        margin-right: auto;
+    }
+
+}
+
+
+#intro {
+    padding: 4rem 1rem 10rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
